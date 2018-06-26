@@ -1,0 +1,1 @@
+console.log('this will be replaced by webpack minification and bundling of required scripts');

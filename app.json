@@ -1,0 +1,8 @@
+{
+  "name": "StephenBayer.com",
+  "description": "A personal website for Stephen BAyer",
+  "repository": "https://github.com/stephenbayer/stephenbayer.com.git",
+  "logo": "https://avatars3.githubusercontent.com/u/5316965?s=400&v=4",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
