@@ -86,6 +86,11 @@ body {
 .row.header-row {
     border-bottom: 4px double #202048;
 }
+
+
+.row.footer-row {
+    border-top: 4px double #202048;
+}
 .logo-text-img {
 
 }
