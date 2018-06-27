@@ -37,6 +37,29 @@ body {
     padding-top:calc(50% - 30px);
     margin: 0;
 }
+.panel-nav {
+  top: 0;
+  font-size: large;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 4px;
+  font-weight: bold;
+  color: black;
+  left: 0;
+  right: 0;
+  vertical-align: bottom;
+  text-align: center;
+}
+.panel-nav img {
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  opacity: 0.38;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .img-square {
     top: 2%;
     position: absolute;
