@@ -1,6 +1,7 @@
 body {
-    background-color: gray;
+    background: dimgray url('/img/bg_pixel_6.png');
 }
+
 .size-overlay {
     position: absolute;
     left: 0;
@@ -10,7 +11,7 @@ body {
     background-color: white;
 }
 .main {
-    background-color: lightgray
+    background-color: darkgray;
 }
 .dummy {
     margin-top: 100%;
@@ -102,8 +103,8 @@ body {
 }
 /* panel colors */
 .panel.disabled {
-    background-color: #bbbbbb;
-    border: thin solid #9a9a9a;
+    background: gray url('/img/bg_pixel_1.png');
+    border: thin solid slategray;
 }
 .panel.gray {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#777777+0,aaaaaa+100 */
