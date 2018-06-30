@@ -20,6 +20,13 @@ body {
     width: 100%;
     padding-bottom: 100%;
 }
+.side-border {
+  background: gray url('/img/bg_pixel_1.png')
+}
+.content {
+    min-height: 300px;
+    background-color: silver;
+}
 .panel {
     border: thin solid black;
     position: relative;

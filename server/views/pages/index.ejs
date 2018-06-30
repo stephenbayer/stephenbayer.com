@@ -1,50 +1,5 @@
-<!doctype html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <title>Stephen A. Bayer</title>
-      <meta name="description" content="Stephen A. Bayer">
-      <meta name="author" content="sabayer@gmail.com">
-      <meta name="google-site-verification" content="XV-IUSj2MKurF_f9Xr0sQJOzjBzMWrzqGwv5k-VELy8" />
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/styles.css?v=1.0">
-      <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-      <![endif]-->
-   </head>
-   <body>
-      <div class="size-overlay" style="display: none;">
-         <h1 class="hidden-sm hidden-xs hidden-md hidden-lg visible-xlg">Extra Large</h1>
-         <h1 class="hidden-sm hidden-xs hidden-md visible-lg">Large</h1>
-         <h1 class="hidden-sm hidden-xs visible-md hidden-lg">Medium</h1>
-         <h1 class="visible-sm hidden-xs hidden-md hidden-lg">Small</h1>
-         <h1 class="hidden-sm hidden-xs hidden-md hidden-lg">Extra Small</h1>
-      </div>
-      <div class="container main">
-      <div class="row header-row">
-         <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2 panel disabled">
-            <div class="square" ></div>
-         </div>
-         <div class="col-2 col-xs-3  col-sm-3 col-md-3 col-lg-2 col-xl-2 panel gray">
-            <div class="square" ></div>
-            <img src="img/stephen_300x300.jpg" class="img-square img-logo hidden-xs" />
-         </div>
-         <div class="col-2 col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 panel gray">
-            <div class="square" > </div>
-            <img src="img/stephen.a.bayer.text.png" class="img-square-3 hidden-xs logo-text-img" />
-            <img src="img/stephen.a.bayer.text.png" style="left: -42%;" class="img-square-3 visible-xs logo-text-img" />
-         </div>
-         <div class="col-2 col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 panel gray">
-            <div class="square" > </div>
-         </div>
-         <div class="col-2 col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 panel gray">
-            <div class="square" > </div>
-         </div>
-         <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2 panel disabled">
-            <div class="square" > </div>
-         </div>
-      </div>
+<%- include('head') -%>
+
       <div class="row first-row">
          <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2 panel disabled">
             <div class="square" >
@@ -52,7 +7,7 @@
          </div>
          <div class="col-2 col-xs-12 col-sm-3 col-md-3 col-lg-2 col-xl-2 panel yellow">
             <div class="square" >
-               <a href="#" class="panel-nav">
+               <a href="/about" class="panel-nav">
                <img src="img/stephen-panel.png" />
                <span>About<span>
                </a>
@@ -60,7 +15,7 @@
          </div>
          <div class="col-2 col-xs-12 col-sm-3 col-md-3 col-lg-2 col-xl-2 panel blue">
             <div class="square" >
-               <a href="#" class="panel-nav">
+               <a href="/skills" class="panel-nav">
                <img src="img/atom-edit.png" />
                <span>Skills</span>
                </a>
@@ -72,7 +27,7 @@
          </div>
          <div class="col-2 col-xs-12 col-sm-3 col-md-3 col-lg-2 col-xl-2 panel green">
             <div class="square" >
-               <a href="#" class="panel-nav">
+               <a href="/portfolio" class="panel-nav">
                <img src="img/turtles.png" />
                <span>Portfolio</span>
                </a>
@@ -92,7 +47,7 @@
          </div>
          <div class="col-2 col-xs-12 col-sm-3 col-md-3 col-lg-2 col-xl-2 panel orange">
             <div class="square" >
-               <a href="#" class="panel-nav">
+               <a href="/blog" class="panel-nav">
                <img src="img/home_key.jpg" />
                <span>Blog</span>
                </a>
@@ -100,7 +55,7 @@
          </div>
          <div class="col-2 col-xs-12 col-sm-3 col-md-3 col-lg-2 col-xl-2 panel green">
             <div class="square" >
-               <a href="#" class="panel-nav">
+               <a href="/interests" class="panel-nav">
                <img src="img/jerry_screams.png" />
                <span>Interests</span>
                </a>
@@ -123,7 +78,7 @@
 
          <div class="col-2 col-xs-12 col-sm-3 col-md-3 col-lg-2 col-xl-2 panel orange">
             <div class="square" >
-               <a href="#" class="panel-nav">
+               <a href="/photos" class="panel-nav">
                <img src="img/camera.jpg" />
                <span>Photos</span>
                </a>
@@ -142,7 +97,7 @@
 
          <div class="col-2 col-xs-12 col-sm-3 col-md-3 col-lg-2 col-xl-2 panel blue">
             <div class="square  " >
-               <a href="#" class="panel-nav front">
+               <a href="/contact" class="panel-nav front">
                <img src="img/mailbox.png" />
                <span>Contact</span>
                </a>
@@ -152,30 +107,4 @@
             <div class="square" > </div>
          </div>
       </div>
-         <div class="row footer-row">
-            <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2 panel disabled">
-               <div class="square" ></div>
-            </div>
-            <div class="col-2 col-xs-3  col-sm-3 col-md-3 col-lg-2 col-xl-2 panel gray">
-               <div class="square" ></div>
-            </div>
-            <div class="col-2 col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 panel gray">
-               <div class="square" > </div>
-            </div>
-            <div class="col-2 col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 panel gray">
-               <div class="square" > </div>
-            </div>
-            <div class="col-2 col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 panel gray">
-               <div class="square" > </div>
-            </div>
-            <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2 panel disabled">
-               <div class="square" > </div>
-            </div>
-         </div>
-      </div>
-      <script src="js/scripts.js"></script>
-      <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
-      <script src="//unpkg.com/popper.js@1.14.3/dist/umd/popper.min.js"></script>
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-   </body>
-</html>
+    <%- include('foot') -%>
