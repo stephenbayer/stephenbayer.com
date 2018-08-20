@@ -1,23 +1,37 @@
 <%- include('head') -%>
 
-      <div class="row first-row  side-border">
+<div class="row first-row  side-border">
 
-                 <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2 ">
-                    &nbsp;
-                 </div>
+    <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2 "> </div>
 
-                 <div class="col-8 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 content">
-          <h2>Contact</h2>
-          <p>
-            I'm only human, flesh and blood, born to make mistakes.
-          </p>
-          <p>
-            Also, I am human and I need to be loved.
-          </p>
-                 </div>
+    <div class="col-8 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 content">
 
-                 <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2  ">
-                                &nbsp;
-                 </div>
-      </div>
-    <%- include('foot') -%>
+        <div class="breadcrumbs">
+            <a href="/">Home</a>
+            <span class="breadcrumb_separator"><i class="fa fa-angle-double-right"></i></span>
+            <span class="breadcrumb_current_page">Contact</span>
+        </div>
+        <% if(message) { %>
+        <h3><%= message %></h3>
+        <%  } else { %>
+
+        <% if(error) { %>
+        <h3 class="error"><%= error %></h3>
+        <%  } %>
+        <form action="/contact" id="contact-form" method="post" role="form">
+            <fieldset>
+                <label for="name">Name &#42;</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required="required"><br />
+                <label for="email">Email &#42;</label>
+                <input id="email" name="email" type="text" placeholder="Your email" required="required"><br />
+                <label for="message">Message &#42;</label>
+                <textarea id="message" name="message" placeholder="Enter your message here" rows="3" required="required"></textarea><br />
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+        <% } %>
+    </div>
+
+    <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2  "> </div>
+</div>
+<%- include('foot') -%>
