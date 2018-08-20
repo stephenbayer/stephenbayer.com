@@ -3,7 +3,14 @@ const path = require('path');
 const PORT = process.env.PORT || 3657;
 
 const GMAIL_USER = process.env.GMAIL_USER;
+if (!GMAIL_USER) {
+    throw 'environment variable: GMAIL_USER not set';
+}
+
 const GMAIL_PASS = process.env.GMAIL_PASS;
+if (!GMAIL_PASS) {
+  throw 'environment variable: GMAIL_PASS not set';
+}
 
 const app = express();
 const nodemailer = require('nodemailer');

@@ -91,6 +91,15 @@ body {
   z-index: 2;
 }
 
+.first-row .jumbo-tron {
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 24px;
+    margin-top: 20px;
+    height: 130px;
+    padding-bottom: 24px;
+}
+
 .panel-nav span {
     background-color: silver;
     padding: 0;
