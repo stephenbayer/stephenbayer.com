@@ -24,8 +24,7 @@ app
 
 // POST route from contact form
 app.post('/contact', function (req, res) {
-    var mailOpts, smtpTrans;
-    smtpTrans = nodemailer.createTransport({
+    const mailServer = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,
         secure: true,
@@ -34,15 +33,23 @@ app.post('/contact', function (req, res) {
             pass: GMAIL_PASS
         }
     });
-    mailOpts = {
-        from: req.body.name + ' &lt;' + req.body.email + '&gt;',
+    const message = 'Message from: ' + req.body['email'] + ' <' + req.body['name'] + '>:\n' + req.body['message'];
+    const mailInfo = {
+        from: GMAIL_USER,
         to: GMAIL_USER,
         subject: 'New message from contact form',
-        text: req.body.name + '(' + req.body.email + ' says: ' + req.body.message
+        text: message
     };
-    smtpTrans.sendMail(mailOpts, function (error) {
+    mailServer.sendMail(mailInfo, function (error) {
         if (error) {
-            res.render('pages/contact', {title: 'Contact', message: false, error: error});
+            res.render(
+              'pages/contact',
+              {
+                title: 'Contact',
+                message: false,
+                error: 'ERROR! Mail has not been sent<br />' + error
+              }
+          );
         }
         else {
             res.render('pages/contact', {title: 'Contact', message: 'Message Sent!', error: false});

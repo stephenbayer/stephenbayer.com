@@ -2,6 +2,28 @@ body {
     background: dimgray url('/img/bg_pixel_6.png');
 }
 
+.contact-form {
+    margin: 25px 20px 25px 15px;
+}
+.breadcrumbs {
+    margin: 9px 1px 9px 6px;
+}
+
+.breadcrumb_separator {
+    margin: 0 4px 0 4px;
+}
+
+.breadcrumb_current_page {
+
+}
+.row.contact-block {
+    margin: 25px 20px 25px 15px;
+}
+hr.block_separator {
+    border: medium none;
+    border-top: 1px solid #cccccc;
+    height: 1px
+}
 .size-overlay {
     position: absolute;
     left: 0;

@@ -12,26 +12,59 @@
             <span class="breadcrumb_current_page">Contact</span>
         </div>
         <% if(message) { %>
-        <h3><%= message %></h3>
+            <h3><%= message %></h3>
         <%  } else { %>
 
         <% if(error) { %>
-        <h3 class="error"><%= error %></h3>
+            <h3 class="error"><%= error %></h3>
         <%  } %>
-        <form action="/contact" id="contact-form" method="post" role="form">
+        <form action="/contact" id="contact-form" class="contact-form" method="post" role="form">
             <fieldset>
-                <label for="name">Name &#42;</label>
-                <input id="name" name="name" type="text" placeholder="Your name" required="required"><br />
-                <label for="email">Email &#42;</label>
-                <input id="email" name="email" type="text" placeholder="Your email" required="required"><br />
-                <label for="message">Message &#42;</label>
-                <textarea id="message" name="message" placeholder="Enter your message here" rows="3" required="required"></textarea><br />
-                <button type="submit">Submit</button>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" class="form-control" type="text" placeholder="Name"  />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" class="form-control" type="text" placeholder="Email Address"  />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message (required)</label>
+                    <textarea id="message" name="message" class="form-control"
+                              placeholder="What do you have to say?" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </fieldset>
         </form>
         <% } %>
-    </div>
 
+        <hr class="block_separator" />
+        <div class="row contact-block">
+            <header>Contact Info</header>
+
+                <div>Stephen Bayer</div>
+                <div>sabayer@gmail.com</div>
+                <div>(415) 369-7888</div>
+                <div>410 Santa Clara Ave, Apt G</div>
+                <div>Alameda CA 94501</div>
+
+        </div>
+
+        <hr class="block_separator" />
+        <div class="row contact-block">
+            <header>Find me on social media at:</header>
+            <div>Facebook:  <a href="https://www.facebook.com/sabayer">sabayer</a></div>
+            <div>Twitter:  <a href="https://twitter.com/stephenbayer">stephenbayer</a></div>
+            <div>Instagram: <a href="https://www.instagram.com/bayercsk/">bayercsk</a></div>
+            <div>LinkedIn: <a href="https://www.linkedin.com/in/stephenabayer/">stephenabayer</a></div>
+            <div>StackOverflow: <a href="https://stackoverflow.com/users/18893/stephenbayer">Stephenbayer</a></div>
+            <div>GitHub:  <a href="https://github.com/stephenbayer">stephenbayer</a></div>
+            <div>Google+: <a href="https://plus.google.com/100820562381679492290">Stephen Bayer</a></div>
+            <div>Dribble: <a href="https://dribbble.com/stephenbayer">stephenbayer</a></div>
+            <div>Medium:  <a href="https://medium.com/@sabayer">@sabayer</a></div>
+            <div>PluralSight: <a href="https://app.pluralsight.com/profile/stephenbayer">stephenbayer</a></div>
+        </div>
+    </div>
     <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2  "> </div>
 </div>
 <%- include('foot') -%>
