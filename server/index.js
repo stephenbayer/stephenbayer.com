@@ -15,6 +15,16 @@ if (!GMAIL_PASS) {
 const app = express();
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+
+// force redirect to http
+app.use (function (req, res, next) {
+    if (process.env.mode === 'DEV') {
+      next();
+    } else {
+      if (req.secure) { next(); } else { res.redirect('https://' + req.headers.host + req.url); }
+    }
+});
+
 app.use(bodyParser.urlencoded({extended: true}));
 
 app
