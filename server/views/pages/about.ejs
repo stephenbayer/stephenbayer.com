@@ -1,23 +1,47 @@
 <%- include('subhead') -%>
 
-      <div class="row first-row  side-border">
+<div class="row first-row  side-border">
 
-                 <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2 ">
-                    &nbsp;
-                 </div>
+    <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2 ">&nbsp;</div>
 
-                 <div class="col-8 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 content">
-          <h2>About Me</h2>
-          <p>
-            I'm only human, flesh and blood, born to make mistakes.
-          </p>
-          <p>
-            Also, I am human and I need to be loved. 
-          </p>
-                 </div>
+    <div class="col-8 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 content">
+        <div class="breadcrumbs">
+            <a href="/">Home</a>
+            <span class="breadcrumb_separator"><i class="fa fa-angle-double-right"></i></span>
+            <span class="breadcrumb_current_page">About</span>
+        </div>
 
-                 <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2  ">
-                                &nbsp;
-                 </div>
-      </div>
-    <%- include('foot') -%>
+        <h2>About Me</h2>
+        <p>
+            My name is Stephen Bayer and I am a full time software engineer.  For as long as I could remember,
+            it is the only job I wanted to do.  Even as a child, barely out of toddler-hood, I would set up my
+            bedroom into a fantasy software shop, coding dumb games on my TRS-80, with my stuffed bear, Curly Hair
+            Window Pane, as my QA manager.  The bear did not have curly hair, nor did it look like an architectural
+            fixture of any kind, so I'm unsure of how I came up with that name.
+        </p>
+
+        <p>
+            Outside of software, I am passionate about a few other things. These are enumerated and organized on a
+            separate <a href="/interests">interests page</a>.  (as of the time that this paragraph is being written,
+            the interests page isn't completely finished, but I'm assuming something cat related will be toward the
+            top)
+        </p>
+
+        <hr class="block_separator" />
+        <h2>About this site</h2>
+        <p>
+            I wanted this site to be completely me.  All pictures and html and code written from scratch from the
+            ground up.  I also wanted it to be obviously a personal website and not a business website, unpolished
+            and, as much as possible, an honest representation of me.
+        </p>
+
+        <p>
+            Currently, the site is straight HTML being served from a bare bones nodejs/express server.  But, I'm
+            transforming this to Angular to handle more of the app centric sections, such as the blog, photo
+            gallery, and events page.
+        </p>
+    </div>
+
+    <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2  ">&nbsp;</div>
+</div>
+<%- include('foot') -%>
