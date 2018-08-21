@@ -1,5 +1,7 @@
 const express = require('express');
 const path = require('path');
+const sslify = require('express-sslify');
+
 const PORT = process.env.PORT || 3657;
 
 const GMAIL_USER = process.env.GMAIL_USER;
@@ -16,21 +18,13 @@ const app = express();
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 
-/*
-force redirect to HTTPS doesn't work in heroku (it seems to be behind a load balancer and traffic redirect
-which causes req.secure to always be false.  because even if it is https on the outside, the internal call is probably
-still calling http version
 
-// force redirect to http
-app.use (function (req, res, next) {
-    // instead of testing for dev.  I can test if the PORT is 3657 which will only be in dev mode
-    if (process.env.mode === 'DEV') {
-      next();
-    } else {
-      if (req.secure) { next(); } else { res.redirect('https://' + req.headers.host + req.url); }
-    }
-});
-*/
+app.use(sslify.HTTPS({
+  trustProtoHeader: true,
+  trustAzureHeader: true,
+  trustXForwardedHostHeader: true
+}));
+
 app.use(bodyParser.urlencoded({extended: true}));
 
 app
