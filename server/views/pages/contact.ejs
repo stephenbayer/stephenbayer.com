@@ -6,11 +6,12 @@
 
     <div class="col-8 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 content">
 
-        <div class="breadcrumbs">
-            <a href="/">Home</a>
-            <span class="breadcrumb_separator"><i class="fa fa-angle-double-right"></i></span>
-            <span class="breadcrumb_current_page">Contact</span>
-        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contact</li>
+            </ol>
+        </nav>
 
         <% if(message) { %>
             <h3><%= message %></h3>

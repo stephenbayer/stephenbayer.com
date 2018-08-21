@@ -5,17 +5,10 @@ body {
 .contact-form {
     margin: 25px 20px 25px 15px;
 }
-.breadcrumbs {
-    margin: 9px 1px 9px 6px;
+.breadcrumb {
+    margin: 20px 25px 14px 20px;
 }
 
-.breadcrumb_separator {
-    margin: 0 4px 0 4px;
-}
-
-.breadcrumb_current_page {
-
-}
 .row.contact-block {
     margin: 25px 20px 25px 15px;
 }

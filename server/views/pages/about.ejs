@@ -5,11 +5,13 @@
     <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2 ">&nbsp;</div>
 
     <div class="col-8 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 content">
-        <div class="breadcrumbs">
-            <a href="/">Home</a>
-            <span class="breadcrumb_separator"><i class="fa fa-angle-double-right"></i></span>
-            <span class="breadcrumb_current_page">About</span>
-        </div>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About</li>
+            </ol>
+        </nav>
 
         <h2>About Me</h2>
         <p>
@@ -31,15 +33,21 @@
         <h2>About this site</h2>
         <p>
             I wanted this site to be completely me.  All pictures and html and code written from scratch from the
-            ground up.  I also wanted it to be obviously a personal website and not a business website, unpolished
+            ground up, no boiler plates, no templates.  I also wanted it to be obviously a personal website and not a
+            business website, unpolished, devoid of clip art and bright stock photos of people in suits shaking hands,
             and, as much as possible, an honest representation of me.
         </p>
 
         <p>
-            Currently, the site is straight HTML being served from a bare bones nodejs/express server.  But, I'm
-            transforming this to Angular to handle more of the app centric sections, such as the blog, photo
-            gallery, and events page.
+            I also wanted and will continue to use this site as a learning experience for web based software
+            development stacks, tools, and deployment techniques.  As such, after initial deployment, I will probably
+            be attempting to constantly update with new content and update existing pages.  Currently, the site is
+            straight HTML being served from a bare bones nodejs/express server.  But, my first transition is going to
+            be to update the pages  Angular to handle more of the app centric sections I am working on, such as the
+            blog, photo gallery, and events page.  I feel this is going to be a fun learning experience moving
+            to a server based Angular site and setting up deployment to a cloud service.
         </p>
+        <hr class="block_separator" />
     </div>
 
     <div class="col-2 hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2  ">&nbsp;</div>

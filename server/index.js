@@ -18,12 +18,13 @@ const app = express();
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 
-
-app.use(sslify.HTTPS({
-  trustProtoHeader: true,
-  trustAzureHeader: true,
-  trustXForwardedHostHeader: true
-}));
+if (PORT !== 3657) {
+  app.use(sslify.HTTPS({
+    trustProtoHeader: true,
+    trustAzureHeader: true,
+    trustXForwardedHostHeader: true
+  }));
+}
 
 app.use(bodyParser.urlencoded({extended: true}));
 
