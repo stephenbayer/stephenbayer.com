@@ -79,7 +79,7 @@ app
   .get('/photos', (req, res) => res.render('pages/photos', {title: 'Photos'}))
   .get('/contact', (req, res) => res.render('pages/contact', {title: 'Contact', error: false, message: false}))
   .get('/sitemap', (req, res) => res.render('pages/sitemap', {title: 'Site Map'}))
-  .get('/resume', (req, res) => res.render('pages/resume.html', {title: 'Resume'}));
+  .get('/resume', (req, res) => res.render('pages/resume', {title: 'Resume'}));
 
 app
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
