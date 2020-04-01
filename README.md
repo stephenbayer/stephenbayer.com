@@ -1,4 +1,3 @@
 # stephenbayer.com
 
-- test
-* test 2
+1. [Coding and Design Standards](/docs/standards/readme.md)
